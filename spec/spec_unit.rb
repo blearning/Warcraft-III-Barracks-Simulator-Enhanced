@@ -13,7 +13,7 @@ describe Unit do
   end
 
   describe "#attack!" do
-    it "should cannot attack another unit if the unit and dead" do
+    it "cannot attack another unit if the unit is dead" do
       unit.should_receive(:health_points).and_return(0)
       expect(unit.attack!(barrack)).to be_falsy
     end

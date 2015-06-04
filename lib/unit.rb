@@ -20,7 +20,7 @@ class Unit
       puts "sorry, your unit is dead, you cant attack"
       return false
     else
-    target.damage(ap)
+    target.damage(attack_power)
     end
   end
 
